@@ -15,6 +15,7 @@ Requires:         R-Biobase R-Rgraphviz R-annotate R-fibroEset R-hgu95av2.db R-h
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-Biobase R-annotate R-lattice
 BuildRequires:    R-annotate R-AnnotationDbi R-Biobase R-graphics R-grDevices R-grid R-methods R-RColorBrewer R-stats R-utils 
 BuildRequires:    R-Biobase R-Rgraphviz R-annotate R-fibroEset R-hgu95av2.db R-hu6800.db R-hgu133a.db 
+BuildRequires:    x11-server-xvfb
 
 %description
 Some basic functions for plotting genetic data
@@ -31,7 +32,7 @@ test -d %{packname}/src && (cd %{packname}/src; rm -f *.o *.so)
 rm -f %{buildroot}%{rlibdir}/R.css
 
 %check
-%{_bindir}/R CMD check %{packname}
+xvfb-run %{_bindir}/R CMD check %{packname}
 
 %files
 %dir %{rlibdir}/%{packname}
