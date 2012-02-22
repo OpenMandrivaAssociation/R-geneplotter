@@ -9,12 +9,15 @@ Group:            Sciences/Mathematics
 License:          Artistic-2.0
 URL:              http://bioconductor.org/packages/release/bioc/html/%{packname}.html
 Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/%{packname}_%{version}.tar.gz
-Requires:         R-Biobase R-annotate R-lattice 
-Requires:         R-annotate R-AnnotationDbi R-Biobase R-graphics R-grDevices R-grid R-methods R-RColorBrewer R-stats R-utils 
-Requires:         R-Biobase R-Rgraphviz R-annotate R-fibroEset R-hgu95av2.db R-hu6800.db R-hgu133a.db 
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-Biobase R-annotate R-lattice
-BuildRequires:    R-annotate R-AnnotationDbi R-Biobase R-graphics R-grDevices R-grid R-methods R-RColorBrewer R-stats R-utils 
-BuildRequires:    R-Biobase R-Rgraphviz R-annotate R-fibroEset R-hgu95av2.db R-hu6800.db R-hgu133a.db 
+Requires:         R-Biobase R-annotate R-lattice R-AnnotationDbi R-graphics
+Requires:         R-grDevices R-grid R-methods R-RColorBrewer R-stats R-utils
+Requires:         R-Rgraphviz R-annotate R-fibroEset R-hgu95av2.db
+Requires:         R-hu6800.db R-hgu133a.db
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex
+BuildRequires:    R-Biobase R-annotate R-lattice R-AnnotationDbi R-graphics
+BuildRequires:    R-grDevices R-grid R-methods R-RColorBrewer R-stats R-utils
+BuildRequires:    R-Rgraphviz R-annotate R-fibroEset R-hgu95av2.db
+BuildRequires:    R-hu6800.db R-hgu133a.db
 BuildRequires:    x11-server-xvfb
 
 %description
