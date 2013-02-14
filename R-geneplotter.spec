@@ -1,14 +1,16 @@
 %global packname  geneplotter
 %global rlibdir  %{_libdir}/R/library
 
+%define debug_package %{nil}
+
 Name:             R-%{packname}
-Version:          1.32.1
+Version:          1.36.0
 Release:          1
 Summary:          Graphics related functions for Bioconductor
 Group:            Sciences/Mathematics
 License:          Artistic-2.0
 URL:              http://bioconductor.org/packages/release/bioc/html/%{packname}.html
-Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/%{packname}_%{version}.tar.gz
+Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/geneplotter_1.36.0.tar.gz
 Requires:         R-Biobase R-annotate R-lattice R-AnnotationDbi R-graphics
 Requires:         R-grDevices R-grid R-methods R-RColorBrewer R-stats R-utils
 Requires:         R-Rgraphviz R-annotate R-fibroEset R-hgu95av2.db
