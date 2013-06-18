@@ -5,7 +5,7 @@
 
 Name:             R-%{packname}
 Version:          1.36.0
-Release:          1
+Release:          2
 Summary:          Graphics related functions for Bioconductor
 Group:            Sciences/Mathematics
 License:          Artistic-2.0
