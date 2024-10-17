@@ -9,7 +9,7 @@ Release:          1
 Summary:          Graphics related functions for Bioconductor
 Group:            Sciences/Mathematics
 License:          Artistic-2.0
-URL:              http://bioconductor.org/packages/release/bioc/html/%{packname}.html
+URL:              https://bioconductor.org/packages/release/bioc/html/%{packname}.html
 Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/geneplotter_1.38.0.tar.gz
 Requires:         R-Biobase R-annotate R-lattice R-AnnotationDbi R-graphics
 Requires:         R-grDevices R-grid R-methods R-RColorBrewer R-stats R-utils
